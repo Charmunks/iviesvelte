@@ -41,7 +41,7 @@ I currently work as a software engineer on the clubs team at [Hack Club](https:/
 	<Project
 		name="seek.gay" 
 		link="https://seek.gay" 
-		description="Private and secure web browser."
+		description="Private and secure search engine."
 	/>
 </ProjectGrid>
 
