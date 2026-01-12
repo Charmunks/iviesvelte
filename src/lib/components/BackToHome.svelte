@@ -1,14 +1,5 @@
-<script>
-	let isHovered = false;
-</script>
-
-<a 
-	href="/"
-	class="backToHome"
-	on:mouseenter={() => isHovered = true}
-	on:mouseleave={() => isHovered = false}
->
-	<span class="arrow" class:hovered={isHovered}>←</span>
+<a href="/" class="backToHome">
+	<span class="arrow">←</span>
 	Back to Home
 </a>
 
@@ -33,7 +24,7 @@
 		transition: transform 0.2s ease;
 	}
 
-	.arrow.hovered {
+	.backToHome:hover .arrow {
 		transform: translateX(-3px);
 	}
 </style>

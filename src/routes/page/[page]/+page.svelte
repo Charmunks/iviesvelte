@@ -50,7 +50,6 @@
 	}
 
 	.mew-panel {
-		width: 45%;
 		height: 100vh;
 		position: fixed;
 		left: 0;

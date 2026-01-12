@@ -15,10 +15,12 @@
 		transition: transform 0.2s ease;
 		margin-left: 4px;
 		margin-bottom: 8px;
+		position: relative;
 	}
 
 	.button-88x31:hover {
 		transform: scale(1.15);
+		z-index: 10;
 	}
 
 	.button-88x31 img {
