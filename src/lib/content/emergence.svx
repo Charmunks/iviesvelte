@@ -1,0 +1,74 @@
+<script>
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import BackToHome from '$lib/components/BackToHome.svelte';
+	let contentEl;
+</script>
+
+<BackToHome/>
+
+<ArticleHeader 
+	title="Developing Emergent Behavior"
+	author="Charmunk"
+	authorAvatarPath="https://ca.slack-edge.com/T0266FRGM-U07UV4R2G4T-2fdbf62c3198-512"
+	date="2026-01-04"
+	description="How I developed a tiny evolution simulator using bouncing DVD logos"
+	toc={true}
+	content={contentEl}
+/>
+
+## Preface
+
+Hi! I'm [Ivie](https://github.com/Charmunks/). I am a 14yr old developer. I have been tinkering with technology and programming since I was 7 years old, when my dad let me use his old laptop, a ancient dell running linux.
+
+Nowadays, I love creating web apps, games, and scripts to automate day to day tasks.  Recently (yesterday as of writing this) started a paid contracting position at the Hack Foundation, a nonprofit organization that has helped me immensely with actually learning to build projects (in fact, they were the reason the project you are reading about came to fruition)
+
+This project is certainly not my most impressive or complex project, but it is pretty unique, and I would love to share the story of how it came to be!
+
+## What even is emergent behavior?
+
+Emergence is [defined](https://en.wikipedia.org/wiki/Emergence) as "When a complex entity has properties or behaviors that its parts do not have on their own, and emerge only when they interact in a wider whole."
+
+In programming, this is usually used to refer to when a complex system is formed based on a few simple programmed rules working in tandem. The most popular example of emergent behavior in computing is [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
+
+## The Idea
+
+I got the idea to start working on an emergent system from [Hack Club](https://hackclub.com/)'s [Emerge](https://emerge.hackclub.com/) Program. Emerge was a program where if you made an emergent behavior, you would get pixels you could place on a shared canvas in the style of the canvas from Conway's Game of Life. Then, once the program ended, everyone got physical posters of the canvas produced.
+
+The program recommended using p5.js, and since I didn't have any better ideas, I opened up vscode and began tinkering with it. I started playing around with dots and make it so you could click to spawn in dots, and they would bounce around and bounce off walls.
+
+This reminded me of a DVD logo, and after thinking for a bit, an idea came to my mind. What if I make something like [agar.io](https://agar.io/) (a popular browser game where you are a circle that gains size by eating other circles/players and try to be as big as possible) but instead of being controlled by player input, it was completely automated based on a basic set of rules, centering around the idea of bouncing off walls and trying to hit the corner. 
+
+I named the project "Darwins DVDs"
+
+## The rules
+
+The core concept of emergence is creating complexity from a simple ruleset. The rules I implemented are as follows:
+
+1. The user can click on the map to place a square.
+2. Squares move in a random direction and change directions every 5 seconds or when they hit a wall.
+3. If two squares or clumps run into each other, they form a larger combined clump.
+4. For each square in a clump, the clump gains 1.5x speed.
+5. If a square is within a small distance of a clump more then 3 times bigger then it, it moves in the opposite direction to try to avoid being absorbed.
+6. When a clump hits one of the corners of the screen, it separates into squares, each moving in different directions.
+
+## Building it
+
+I had never used p5.js before, or done anything similar, so actually building this involved a lot of trial and error.
+
+The first step was to implement basic movement. It was fairly simple to make the squares spawn in on click and move in random directions. Instead of using p5's built in libraries for dealing with shapes and moving them around, I opted to just clear and rerender the canvas every frame, and store the positions of each square in an array. This made it a lot easier to interact with it later, for collisions and such.
+
+The first challenge came from making the bouncing off the wall feel right. Initally, I made hitting the wall just change your direction to opposite of the walls (ie hitting the left wall made you move right) but this felt wrong when squares were moving diagonal. Instead, I opted to just reverse your direction. I just hardcoded an array of each direction and their opposites, and then find the matching one on wall collision.
+
+The next step was to implement clumping. I made it so if two squares were within a close area of each other (the average of the two size values), they would form a clump. Clumps would gain 1.5x size and speed for each square inside the clump.
+
+Next, I made it so that squares would run away from any clump at least 3 times bigger then them. This presented a problem of figuring out which direction clumbs are approaching them from, and which direction to move to get away from them, but eventually I was able to figure it out.
+
+Finally, I made it so that clumps would split apart if they hit the corner of the screen. Initally, I tried making them split from the corner, but there was not enough space so they would either form another large clump immediately, or just repeatedly hit the sides due to spawning right next to them. I eventually made it so they split up from the center of the screen, to prevent these issues from happening.  
+
+## The Final Product
+
+The final project's demo can be found [here](https://charmunks.github.io/Darwins-DVDs/) and the source code can be found [here](https://github.com/Charmunks/Darwins-DVDs)
+
+<video width="381" height="417" controls>
+  <source src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/463bad6eccfffa28eb0b691b2b5aac1a3da66338_jmuhocob.webm" type="video/webm" />
+</video>

@@ -1,0 +1,102 @@
+<script>
+	import SocialIcon from '$lib/components/SocialIcon.svelte';
+	import Project from '$lib/components/Project.svelte';
+	import ProjectGrid from '$lib/components/ProjectGrid.svelte';
+	import AboutCard from '$lib/components/AboutCard.svelte';
+	import Button88x31 from '$lib/components/88x31.svelte';
+</script>
+
+# Hi, I'm Ivie!
+
+Hey! You may know me from my online alias “Charmunk”. I’m a teenage developer and love to tinker with technology. I’ve been working with tech since I was a kid.
+
+I am primarily a web developer, but I do dabble in games, hardware, and software/ClI’s every once in a while. I also love a good sci-fi novel or card game.
+
+I currently work as a software engineer on the clubs team at [Hack Club](https://hackclub.com) helping teenagers like me start coding clubs at their schools.
+<SocialIcon icon="github" link="https://github.com/charmunks" />
+<SocialIcon icon="hackclub" link="https://https://hackclub.enterprise.slack.com/team/U07UV4R2G4T" />
+<SocialIcon image="/linkedin.svg" link="https://www.linkedin.com/in/ivie-fonner/" />
+
+# Projects
+
+<ProjectGrid>
+	<Project
+		name="Dropheus" 
+		link="https://github.com/Charmunks/dropheus-monorepo" 
+		description="Browser extention to check if products are dropshipped."
+	/>
+
+	<Project
+		name="Spaces" 
+		link="https://github.com/hackclub/spaces" 
+		description="Cloud development enviorments, accessible in a web browser."
+	/>
+
+	<Project
+		name="Love2D WebIDE" 
+		link="https://github.com/Charmunks/loveweb" 
+		description="Create and play Love2D games in a web browser."
+	/>
+
+	<Project
+		name="seek.gay" 
+		link="https://seek.gay" 
+		description="Private and secure web browser."
+	/>
+</ProjectGrid>
+
+# Posts
+
+<ProjectGrid>
+	<Project
+		name="You can just do stuff" 
+		link="/page/just-do-stuff" 
+		description="The most popular question in the Hack Club Community"
+	/>
+
+	<Project
+		name="Developing Emergent Behavior" 
+		link="/pages/emergence" 
+		description="Building a tiny evolution simulator using bouncing DVD logos"
+	/>
+
+</ProjectGrid>
+
+# Some cool things
+
+<AboutCard 
+	title="Hack Clubber"
+	 description="I am a proud member of Hack Club. I also work there, helping bring the magic they brought me to more people. Hack Club completely changed my life in a major way, I would not be where I am today if it weren't for them." 
+/>
+
+<AboutCard 
+	title="Queer"
+	 description="I am a transsex woman who works in tech, very original I know. I am also <a href='https://en.wikipedia.org/wiki/Asexuality'>asexual</a> and <a href='https://lgbtqia.fandom.com/wiki/Biromantic'>biromantic</a>. Trans rights are human rights; Queer rights are human rights." 
+/>
+
+<AboutCard 
+	title="Pokemon Lover"
+	 description="As you can probably tell, I like Pokemon. My favorite pokemon are Mew and Charmander. I've played every main-line Pokemon game except for Legends Z-A, and I have a decently large Pokemon Card collection." 
+/>
+
+<div style="margin-bottom: 100px;"></div>
+
+<Button88x31 link="https://3kh0.net/" image="/buttons/3kh0.webp" alt="3kh0" />
+<Button88x31 link="https://saahild.com/" image="https://raw.githubusercontent.com/NeonGamerBot-QK/NeonGamerBot-QK/refs/heads/main/webring.gif" alt="Neon" />
+<Button88x31 link="https://lynn.pt/" image="/buttons/lynn.webp" alt="Lynn" />
+<Button88x31 link="https://yip.cat/" image="https://yip.cat/88x31" alt="Taggie" />
+<Button88x31 link="https://hackclub.com/" image="/buttons/hackclub.png" alt="Hack Club" />
+<Button88x31 link="https://svelte.dev" image="/buttons/svelte.gif" alt="Svelte" />
+<Button88x31 link="https://www.thetrevorproject.org/" image="/buttons/transrights.gif" alt="Trans rights" />
+<Button88x31 link="https://www.firefox.com/en-US/" image="/buttons/firefox.gif" alt="Anything but chrome" />
+<Button88x31 link="#" image="/buttons/queer.png" alt="Queer coded" />
+<Button88x31 link="https://ublockorigin.com/" image="/buttons/ublock.png" alt="Ublock Origin" />
+<Button88x31 link="#" image="/buttons/itoddler.gif" alt="Anti-Apple" />
+<Button88x31 link="https://keepthefuturehuman.ai/" image="/buttons/ai.gif" alt="Don't feed the AI" />
+<Button88x31 link="#" image="/buttons/internetpriv.gif" alt="Internet Privacy" />
+<Button88x31 link="https://en.wikipedia.org/wiki/Right_to_repair" image="/buttons/repair.gif" alt="Right to repair" />
+<Button88x31 link="https://catppuccin.com/" image="/buttons/cattheme.png" alt="Catpuccin" />
+<Button88x31 link="https://code.visualstudio.com/" image="/buttons/vscode.png" alt="VSCode" />
+<Button88x31 link="https://frame.work/" image="/buttons/phone.gif" alt="Don't be a phone chump" />
+<Button88x31 link="https://archive.org/" image="/buttons/archive.gif" alt="Archive" />
+
