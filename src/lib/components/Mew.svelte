@@ -1,49 +1,35 @@
 <script>
-	let x = 0;
-	let y = 0;
 	let hovering = false;
-	let expanded = false;
-
-	function handleMouseMove(event) {
-		const rect = event.currentTarget.getBoundingClientRect();
-		x = event.clientX - rect.left;
-		y = event.clientY - rect.top;
-	}
-
-	function handleClick() {
-		expanded = true;
-		setTimeout(() => {
-			expanded = false;
-		}, 2000);
-	}
 </script>
 
 <div
-	class="flashlight-container"
-	role="button"
-	tabindex="0"
-	aria-label="Click to expand flashlight"
-	on:mousemove={handleMouseMove}
+	class="image-container"
 	on:mouseenter={() => (hovering = true)}
 	on:mouseleave={() => (hovering = false)}
-	on:click={handleClick}
-	on:keydown={(e) => e.key === 'Enter' && handleClick()}
 >
-	<img src="/mew.png" alt="Mew" />
-	{#if hovering}
-		<div class="overlay" class:expanded style="--x: {x}px; --y: {y}px;"></div>
-	{/if}
+	<img src="/mew.png" alt="Mew" class:hovering />
+	<div class="glow"></div>
 </div>
 
 <style>
-	.flashlight-container {
+	.image-container {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 35%;
 		height: 100vh;
 		overflow: hidden;
-		border-right: 4px solid #000;
+	}
+
+	.image-container::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40px;
+		height: 100%;
+		background: linear-gradient(to right, transparent, #110d31);
+		pointer-events: none;
 	}
 
 	img {
@@ -51,28 +37,36 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		transition: transform 0.4s ease, filter 0.4s ease;
 	}
 
-	.overlay {
+	img.hovering {
+		transform: scale(1.02);
+		filter: brightness(1.1) saturate(1.1);
+	}
+
+	.glow {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: radial-gradient(
-			circle 100px at var(--x) var(--y),
-			transparent 0%,
-			rgba(0, 0, 0, 0.85) 100%
-		);
 		pointer-events: none;
-		transition: background 0.3s ease;
+		background: radial-gradient(
+			ellipse 60% 40% at 50% 80%,
+			rgba(219, 78, 111, 0.15) 0%,
+			rgba(214, 201, 150, 0.05) 40%,
+			transparent 70%
+		);
+		animation: pulse 4s ease-in-out infinite;
 	}
 
-	.overlay.expanded {
-		background: radial-gradient(
-			circle 150px at var(--x) var(--y),
-			transparent 0%,
-			rgba(0, 0, 0, 0.85) 100%
-		);
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 0.6;
+		}
+		50% {
+			opacity: 1;
+		}
 	}
 </style>

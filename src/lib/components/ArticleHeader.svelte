@@ -87,7 +87,7 @@
 		margin: 0 0 1rem 0;
 		font-size: 2.5rem;
 		font-weight: 700;
-		color: #fbf1f2;
+		color: #f2eecf;
 	}
 
 	.meta {
@@ -95,7 +95,7 @@
 		align-items: center;
 		gap: 1rem;
 		margin-bottom: 1rem;
-		color: #fbf1f2;
+		color: #f2eecf;
 		font-size: 0.9rem;
 	}
 
@@ -112,13 +112,13 @@
 	}
 
 	.author-name {
-		color: #fbf1f2;
+		color: #f2eecf;
 		font-weight: 500;
 	}
 
 	.description {
 		font-size: 1.1rem;
-		color: #fbf1f2;
+		color: #f2eecf;
 		margin: 0;
 		line-height: 1.6;
 	}
@@ -126,14 +126,14 @@
 	.toc {
 		margin-bottom: 2rem;
 		padding: 1rem 1.5rem;
-		border: 2px solid #fbf1f2;
+		border: 2px solid #5d3259;
 		border-radius: 12px;
 	}
 
 	.toc h2 {
 		margin: 0 0 0.75rem 0;
 		font-size: 1.1rem;
-		color: #fbf1f2;
+		color: #f2eecf;
 	}
 
 	.toc ul {
@@ -147,7 +147,7 @@
 	}
 
 	.toc a {
-		color: #338eda;
+		color: #db4e6f;
 		text-decoration: none;
 	}
 

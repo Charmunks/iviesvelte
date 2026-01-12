@@ -21,12 +21,12 @@
 		text-decoration: none;
 		font-size: 0.9rem;
 		font-weight: 600;
-		color: #fbf1f2;
+		color: #f2eecf;
 		transition: color 0.3s ease;
 	}
 
 	.backToHome:hover {
-		color: #89b4fa;
+		color: #db4e6f;
 	}
 
 	.arrow {

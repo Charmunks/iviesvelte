@@ -34,13 +34,13 @@
 	.button {
 		display: inline-block;
 		padding: 0.75rem 1.5rem;
-		background: #1e1e2e;
-		border: 2px solid #313244;
+		background: #110d31;
+		border: 2px solid #5d3259;
 		border-radius: 8px;
 		text-decoration: none;
 		font-size: 1rem;
 		font-weight: 600;
-		color: #cdd6f4;
+		color: #d6c996;
 		transform-style: preserve-3d;
 		transform: perspective(1000px) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
 		transition: transform 0.2s ease-out, border-color 0.3s ease, color 0.3s ease;
@@ -48,8 +48,8 @@
 	}
 
 	.button:hover {
-		border-color: #89b4fa;
-		color: #89b4fa;
+		border-color: #db4e6f;
+		color: #db4e6f;
 	}
 
 	@media (max-width: 768px) {

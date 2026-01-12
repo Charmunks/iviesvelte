@@ -22,25 +22,25 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
-		background-color: #585062;
-		color: #cdd6f4;
+		background-color: #110d31;
+		color: #d6c996;
 		font-family: system-ui, -apple-system, sans-serif;
 		min-height: 100vh;
 	}
 
 	:global(a) {
-		color: #89b4fa;
+		color: #db4e6f;
 		text-decoration: none;
 		transition: color 0.2s ease;
 	}
 
 	:global(a:hover) {
-		color: #b4befe;
+		color: #ff4d76;
 		text-decoration: underline;
 	}
 
 	:global(a:visited) {
-		color: #cba6f7;
+		color: #9a355a;
 	}
 
 	.container {
@@ -50,7 +50,7 @@
 	}
 
 	.mew-panel {
-		width: 40%;
+		width: 45%;
 		height: 100vh;
 		position: fixed;
 		left: 0;
@@ -65,7 +65,7 @@
 		overflow-y: auto;
 		min-height: 100vh;
 		margin-top: 10px;
-		color: #fbf1f2;
+		color: #f2eecf;
 		margin-bottom: 1%;
 	}
 

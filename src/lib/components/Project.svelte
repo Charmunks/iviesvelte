@@ -22,7 +22,7 @@
 		flex: 0 0 calc(33.333% - 0.5rem);
 		min-width: 300px;
 		padding: 1.5rem;
-		border: 2px solid #fbf1f2;
+		border: 2px solid #f58782;
 		border-radius: 12px;
 		text-decoration: none;
 		overflow: hidden;
@@ -43,7 +43,7 @@
 		margin: 0 0 0.75rem 0;
 		font-size: 1.25rem;
 		font-weight: 600;
-		color: #fbf1f2;
+		color: #f2eecf;
 		transition: color 0.3s ease;
 	}
 
@@ -51,7 +51,7 @@
 
 	.project-description {
 		font-size: 0.9rem;
-		color: #fbf1f2;
+		color: #f2eecf;
 		line-height: 1.5;
 	}
 

@@ -17,7 +17,7 @@
 		position: relative;
 		width: 100%;
 		padding: 1.5rem;
-		border: 2px solid #fbf1f2;
+		border: 2px solid #f58782;
 		border-radius: 12px;
 		overflow: hidden;
 		box-sizing: border-box;
@@ -33,13 +33,13 @@
 		margin: 0 0 0.75rem 0;
 		font-size: 1.25rem;
 		font-weight: 600;
-		color: #fbf1f2;
+		color: #f2eecf;
 	}
 
 	.description {
 		margin: 0;
 		font-size: 0.9rem;
-		color: #fbf1f2;
+		color: #f2eecf;
 		line-height: 1.5;
 	}
 </style>
