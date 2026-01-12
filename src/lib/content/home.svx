@@ -56,7 +56,7 @@ I currently work as a software engineer on the clubs team at [Hack Club](https:/
 
 	<Project
 		name="Developing Emergent Behavior" 
-		link="/pages/emergence" 
+		link="/page/emergence" 
 		description="Building a tiny evolution simulator using bouncing DVD logos"
 	/>
 
