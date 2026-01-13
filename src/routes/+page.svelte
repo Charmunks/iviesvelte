@@ -1,10 +1,9 @@
 <script>
 	import Mew from '$lib/components/Mew.svelte';
 	import HomeContent from '$lib/content/home.svx';
-	import { confirmed } from '$lib/stores/music.js';
 </script>
 
-<div class="container" class:hidden={!$confirmed}>
+<div class="container">
 	<div class="mew-panel">
 		<Mew />
 	</div>
@@ -14,10 +13,6 @@
 </div>
 
 <style>
-	.hidden {
-		display: none;
-	}
-
 	.container {
 		display: flex;
 		min-height: 100vh;

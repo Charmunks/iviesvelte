@@ -1,11 +1,10 @@
 <script>
 	import Mew from '$lib/components/Mew.svelte';
-	import { confirmed } from '$lib/stores/music.js';
 
 	export let data;
 </script>
 
-<div class="container" class:hidden={!$confirmed}>
+<div class="container">
 	<div class="mew-panel">
 		<Mew />
 	</div>
@@ -20,10 +19,6 @@
 </div>
 
 <style>
-	.hidden {
-		display: none;
-	}
-
 	.container {
 		display: flex;
 		min-height: 100vh;
