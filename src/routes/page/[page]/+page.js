@@ -1,15 +1,16 @@
-const modules = import.meta.glob('$lib/content/*.svx');
+const modules = import.meta.glob('../../../lib/content/*.svx', { eager: true });
 
 export async function load({ params }) {
 	const { page } = params;
-	const path = `/src/lib/content/${page}.svx`;
 	
-	if (modules[path]) {
-		const content = await modules[path]();
-		return {
-			Content: content.default,
-			page
-		};
+	for (const path in modules) {
+		const fileName = path.split('/').pop().replace('.svx', '');
+		if (fileName === page) {
+			return {
+				Content: modules[path].default,
+				page
+			};
+		}
 	}
 	
 	return {

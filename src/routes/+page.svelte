@@ -1,9 +1,10 @@
 <script>
 	import Mew from '$lib/components/Mew.svelte';
 	import HomeContent from '$lib/content/home.svx';
+	import { confirmed } from '$lib/stores/music.js';
 </script>
 
-<div class="container">
+<div class="container" class:hidden={!$confirmed}>
 	<div class="mew-panel">
 		<Mew />
 	</div>
@@ -13,28 +14,8 @@
 </div>
 
 <style>
-	:global(body) {
-		margin: 0;
-		padding: 0;
-		background-color: #110d31;
-		color: #d6c996;
-		font-family: system-ui, -apple-system, sans-serif;
-		min-height: 100vh;
-	}
-
-	:global(a) {
-		color: #db4e6f;
-		text-decoration: none;
-		transition: color 0.2s ease;
-	}
-
-	:global(a:hover) {
-		color: #ff4d76;
-		text-decoration: underline;
-	}
-
-	:global(a:visited) {
-		color: #9a355a;
+	.hidden {
+		display: none;
 	}
 
 	.container {

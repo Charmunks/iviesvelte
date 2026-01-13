@@ -1,0 +1,43 @@
+<script>
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import Giscus from '$lib/components/Giscus.svelte';
+    import BackToHome from '$lib/components/BackToHome.svelte';
+	let contentEl;
+</script>
+
+<BackToHome />
+
+<ArticleHeader 
+	title="Personal sites are pretty neat"
+	author="Charmunk"
+	authorAvatarPath="https://ca.slack-edge.com/T0266FRGM-U07UV4R2G4T-2fdbf62c3198-512"
+	date="2026-01-04"
+	description="Keeping the indie web alive one site at a time"
+	readTime={true}
+	toc={false}
+	content={contentEl}
+/>
+
+<div bind:this={contentEl}>
+
+I've always loved the idea of a personal site. A place on the internet dedicated to you, styled any way you want. 
+
+The problem is, I can't stop making them. By my counts I've gone through 7 total, but I might be missing one or two. I'm writing this to serve as an archive for my past sites.
+
+## Site V1
+
+This was my first ever personal site. I made it when I was like 12, and it was my first ever attempt at using Svelte, and to be honest it does not look good at all.
+
+<img src="/sites/1.png" width="600px"/>
+
+## Site V2
+
+I decided to try something new, why not make it 3D! I created a little scene using A-Frame. This one also does not look very good, but it's getting better.
+
+<img src="/sites/2.png" width="600px"/>
+
+***
+<Giscus name="personal-sites" />
+
+
+</div>
