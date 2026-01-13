@@ -22,9 +22,11 @@
 
 I've always loved the idea of a personal site. A place on the internet dedicated to you, styled any way you want. 
 
-The problem is, I can't stop making them. By my counts I've gone through 7 total, but I might be missing one or two. I'm writing this to serve as an archive for my past sites.
+I have made... a lot of them. I tend to remake my site from scratch whenever I want to add something new.
 
-## Site V1
+My first ever attempt at a "personal site" when I was quite young was made using some random website builder, but I cannot find the link to screenshot it, so it will not be included.
+
+## Site V1 (the first real one)
 
 This was my first ever personal site. I made it when I was like 12, and it was my first ever attempt at using Svelte, and to be honest it does not look good at all.
 
@@ -32,9 +34,44 @@ This was my first ever personal site. I made it when I was like 12, and it was m
 
 ## Site V2
 
-I decided to try something new, why not make it 3D! I created a little scene using A-Frame. This one also does not look very good, but it's getting better.
+I decided to try something new, why not make it 3D! I created a little scene using A-Frame. This one also does not look very good either.
+
+It was also very hard to maintain or update. A-Frame is cool, but I found the syntax very annoying and the feature-set very limiting.
 
 <img src="/sites/2.png" width="600px"/>
+
+## Site V3
+
+This time, I just went for pure static HTML/CSS. While simplistic, it is definitely an improvement.
+<img src="/sites/3.png" width="600px"/>
+
+## Site V4 
+
+This is the first of my sites that I still like the look of. I wanted to go for a more modern look similar to some other personal sites I had viewed. 
+
+<img src="/sites/4.png" width="600px"/>
+
+## Site V5
+
+By this point, I was tired of static sites. I wanted to add some more complex stuff, and I wanted to start a blog. I decided to make my new site using hugo which is a markdown parser/static site generator. I used the typo theme.
+
+<img src="/sites/5.png" width="600px"/>
+
+## Site V6
+
+This is the site you are viewing! Hugo was awesome for a while, and it's great for blogs. The problem with hugo is that it's very hard to customize or make your own. Your options are basically only what the creator of the theme you use thought of. 
+
+Even just the project display on that site, I had to edit the code of the theme I was using to allow that.
+
+This time, I decided to use svelte with mdsvex. Mdsvex allows embedding svelte components, so you basically have unlimited customization. 
+
+<img src="/sites/6.png" width="600px"/>
+
+
+So yeah! That's every personal site I've made (or at least, the ones I remember.) 
+
+If you don't have a personal site, I would highly recommend making one.
+
 
 ***
 <Giscus name="personal-sites" />

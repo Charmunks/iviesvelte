@@ -13,6 +13,8 @@ Hey! You may know me from my online alias “Charmunk”. I’m a teenage develo
 I am primarily a web developer, but I do dabble in games, hardware, and software/ClI’s every once in a while. I also love a good sci-fi novel or card game.
 
 I currently work as a software engineer on the clubs team at [Hack Club](https://hackclub.com) helping teenagers like me start coding clubs at their schools.
+
+The site you are currently viewing is the 6th iteration of my site. You can view the past ones [here](/page/personal-sites).
 <SocialIcon icon="github" link="https://github.com/charmunks" />
 <SocialIcon icon="hackclub" link="https://https://hackclub.enterprise.slack.com/team/U07UV4R2G4T" />
 <SocialIcon image="/linkedin.svg" link="https://www.linkedin.com/in/ivie-fonner/" />
@@ -49,16 +51,16 @@ I currently work as a software engineer on the clubs team at [Hack Club](https:/
 
 <ProjectGrid>
 	<Project
+		name="Personal sites are neat" 
+		link="/page/personal-sites" 
+		description="Keeping the indie web alive one site at a time"
+	/>
+	<Project
 		name="You can just do stuff" 
 		link="/page/just-do-stuff" 
 		description="The most popular question in the Hack Club Community"
 	/>
 
-	<Project
-		name="Developing Emergent Behavior" 
-		link="/page/emergence" 
-		description="Building a tiny evolution simulator using bouncing DVD logos"
-	/>
 
 </ProjectGrid>
 
