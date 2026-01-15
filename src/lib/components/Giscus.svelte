@@ -18,10 +18,10 @@
 		script.setAttribute('data-mapping', 'specific');
 		script.setAttribute('data-term', name);
 		script.setAttribute('data-strict', '0');
-		script.setAttribute('data-reactions-enabled', '1');
+		script.setAttribute('data-reactions-enabled', '0');
 		script.setAttribute('data-emit-metadata', '0');
 		script.setAttribute('data-input-position', 'bottom');
-		script.setAttribute('data-theme', 'preferred_color_scheme');
+		script.setAttribute('data-theme', 'purple_dark');
 		script.setAttribute('data-lang', 'en');
 		script.crossOrigin = 'anonymous';
 		script.async = true;

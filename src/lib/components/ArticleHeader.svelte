@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 
 	export let title = "";
 	export let author = "";
@@ -12,26 +11,30 @@
 
 	let headings = [];
 	let estimatedReadTime = 0;
+	let initialized = false;
 
-	onMount(() => {
-		if (toc && content) {
-			const headingElements = content.querySelectorAll('h1, h2, h3, h4, h5, h6');
-			headings = Array.from(headingElements).map((el, i) => ({
-				id: el.id || `heading-${i}`,
-				text: el.textContent,
-				level: parseInt(el.tagName.charAt(1))
-			}));
-			headingElements.forEach((el, i) => {
-				if (!el.id) el.id = `heading-${i}`;
-			});
-		}
+	$: if (content && !initialized) {
+		initialized = true;
+		setTimeout(() => {
+			if (toc && content) {
+				const headingElements = content.querySelectorAll('h1, h2, h3, h4, h5, h6');
+				headings = Array.from(headingElements).map((el, i) => ({
+					id: el.id || `heading-${i}`,
+					text: el.textContent,
+					level: parseInt(el.tagName.charAt(1))
+				}));
+				headingElements.forEach((el, i) => {
+					if (!el.id) el.id = `heading-${i}`;
+				});
+			}
 
-		if (readTime && content) {
-			const text = content.textContent || '';
-			const wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
-			estimatedReadTime = Math.ceil(wordCount / 200);
-		}
-	});
+			if (readTime && content) {
+				const text = content.textContent || '';
+				const wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
+				estimatedReadTime = Math.ceil(wordCount / 200);
+			}
+		}, 0);
+	}
 
 	function formatDate(dateStr) {
 		const d = new Date(dateStr);
@@ -80,12 +83,12 @@
 
 <style>
 	.article-header {
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.title {
-		margin: 0 0 1rem 0;
-		font-size: 2.5rem;
+		margin: 0.5rem 0 1rem 0;
+		font-size: 1.75rem;
 		font-weight: 700;
 		color: #f2eecf;
 	}
@@ -94,7 +97,7 @@
 		display: flex;
 		align-items: center;
 		gap: 1rem;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 		color: #f2eecf;
 		font-size: 0.9rem;
 	}
@@ -118,7 +121,7 @@
 
 	.description {
 		font-size: 1.1rem;
-		color: #f2eecf;
+		color: #a28d88;
 		margin: 0;
 		line-height: 1.6;
 	}

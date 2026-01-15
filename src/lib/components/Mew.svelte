@@ -1,15 +1,20 @@
 <script>
+	import { mewVisible } from '$lib/stores/mewVisible.js';
+
 	let hovering = false;
 </script>
 
-<div
-	class="image-container"
-	on:mouseenter={() => (hovering = true)}
-	on:mouseleave={() => (hovering = false)}
->
-	<img src="/mew.png" alt="Mew" class:hovering />
-	<div class="glow"></div>
-</div>
+{#if $mewVisible}
+	<button
+		class="image-container"
+		on:mouseenter={() => (hovering = true)}
+		on:mouseleave={() => (hovering = false)}
+		on:click={() => mewVisible.set(false)}
+	>
+		<img src="/mew.png" alt="Mew" class:hovering />
+		<div class="glow"></div>
+	</button>
+{/if}
 
 <style>
 	.image-container {
@@ -19,6 +24,10 @@
 		width: 35%;
 		height: 100vh;
 		overflow: hidden;
+		border: none;
+		padding: 0;
+		background: none;
+		cursor: pointer;
 	}
 
 	.image-container::after {
@@ -69,4 +78,5 @@
 			opacity: 1;
 		}
 	}
+
 </style>

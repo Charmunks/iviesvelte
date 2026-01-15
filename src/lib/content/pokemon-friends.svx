@@ -1,0 +1,72 @@
+<script>
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import Giscus from '$lib/components/Giscus.svelte';
+    import BackToHome from '$lib/components/BackToHome.svelte';
+	let contentEl;
+</script>
+
+<BackToHome />
+
+<ArticleHeader 
+	title="Pokemon Friends: Scam with cute characters"
+	author="Charmunk"
+	authorAvatarPath="https://ca.slack-edge.com/T0266FRGM-U07UV4R2G4T-2fdbf62c3198-512"
+	date="2026-01-15"
+	description="Even Pokemon isn't free from cheap asset-flip games."
+	readTime={true}
+	toc={true}
+	content={contentEl}
+/>
+
+<div bind:this={contentEl}>
+
+
+*Note: This article was inspired by an amazing [video documentary](https://www.youtube.com/watch?v=M9o2r5nlNi8&t=1691s) on the same topic by [CandyEvie](https://www.youtube.com/@CandyEvie). If you are looking for a more detailed explanation, I highly recommend checking it out.*
+
+# The Gameplay
+
+Pokemon Friends is a spin-off game released for mobile and Nintendo Switch, priced for free on mobile and for $10 on Switch. Play simple puzzles, get rewarded with colorful yarn. Use that yarn to craft custom Pokemon plushies, and sell them to your town members. 
+
+<div style="display: flex; gap: 0.5rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9fecehfexijpvjkh3wgIjU3yGaTnk71Aiw&s" style="max-width: 50%; height: auto; object-fit: contain;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Pokemon_Friends_gameplay.jpg" style="max-width: 50%; height: auto; object-fit: contain;">
+</div>
+
+On the surface, it just looks like a cozy Pokemon game. But as you play, you start to notice that it is very repetitive. You play the same puzzles over and over again, and you never get the yarn you need.
+
+ Each Pokemon needs a different type of yarn to make. The rarer yarn has very low spawn chances. You will get stuck getting the same common yarn over and over while playing the same puzzles you have already beaten if you are trying to collect all the plushies.
+ 
+
+# The Monetization 
+
+On the free version, you can only play 3 puzzles a day. These puzzles are often extremely simple and quick, so that equates to maybe 5 minutes of playtime a day until you are forced to pay. If you want to be able to play all the puzzles, you need to pay $35.99. The cheapest bundle, which only unlocks some puzzles, is $12.
+
+
+# The Scam
+
+As you play the game, you might notice that the puzzles seem very separate from the rest of the game. The core of the game is creating plushies and running your plushie store in a small town, and this part of the game feels very high-quality. 
+
+The puzzles on the other hand feel very cheap. Switching from the plushie gameplay to the puzzles can be very jarring, and the only connection between the two is the yarn you get from beating puzzles.
+
+The puzzles feel like cheap mobile game puzzles with Pokemon characters slapped on top. The reason they feel like that is because they are. 
+
+Pokemon Friends was developed as a collaboration between Pokemon and Wonderfy. Wonderfy is a development studio that makes puzzle games, that's their whole thing.
+
+If you look at the puzzles in one of Wonderfy's previous games, they look exactly the same as the Pokemon ones, but without the Pokemon characters. Even their old website homepage is an exact copy of a puzzle from Pokemon Friends.
+
+<div style="display: flex; gap: 0.5rem;">
+  <img src="/pokemon-friends/01.png" style="max-width: 50%; height: auto; object-fit: contain;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Pokemon_Friends_gameplay.jpg" style="max-width: 50%; height: auto; object-fit: contain;">
+</div>
+
+Every single puzzle from Pokemon Friends is a reskin of a puzzle from their previous mobile game, [ThinkThink](https://play.google.com/store/apps/details?id=com.hanamarulab.thinkthinkapp&hl=en_US).
+
+These are not just similar puzzles, these are puzzles ripped straight from one game into another, with the only change being the characters used.
+
+For Nintendo, a company with large wallets and global influence, promoting a cheap asset flip like this to millions of fans is very disappointing.
+
+***
+<Giscus name="pokemon-friends" />
+
+
+</div>

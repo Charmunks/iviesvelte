@@ -1,13 +1,16 @@
 <script>
 	import Mew from '$lib/components/Mew.svelte';
 	import HomeContent from '$lib/content/home.svx';
+	import { mewVisible } from '$lib/stores/mewVisible.js';
 </script>
 
 <div class="container">
-	<div class="mew-panel">
-		<Mew />
-	</div>
-	<div class="content">
+	{#if $mewVisible}
+		<div class="mew-panel">
+			<Mew />
+		</div>
+	{/if}
+	<div class="content" class:centered={!$mewVisible}>
 		<HomeContent />
 	</div>
 </div>
@@ -39,14 +42,22 @@
 		margin-bottom: 1%;
 	}
 
+	.content.centered {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	@media (max-width: 768px) {
 		.mew-panel {
 			display: none;
 		}
 
-		.content {
+		.content,
+		.content.centered {
 			width: 100%;
 			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 </style>
