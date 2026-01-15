@@ -51,14 +51,14 @@ The site you are currently viewing is the 6th iteration of my site. You can view
 
 <ProjectGrid>
 	<Project
+		name="Pokemon Friends: Scam with cute characters" 
+		link="/page/pokemon-friends" 
+		description="Even Pokemon isn't free from cheap asset-flip games."
+	/>
+	<Project
 		name="Personal sites are neat" 
 		link="/page/personal-sites" 
 		description="Keeping the indie web alive one site at a time"
-	/>
-	<Project
-		name="You can just do stuff" 
-		link="/page/just-do-stuff" 
-		description="The most popular question in the Hack Club Community"
 	/>
 
 
@@ -66,15 +66,18 @@ The site you are currently viewing is the 6th iteration of my site. You can view
 
 # Some cool things
 
+
 <AboutCard 
 	title="Hack Clubber"
 	 description="I am a proud member of Hack Club. I also work there, helping bring the magic they brought me to more people. Hack Club completely changed my life in a major way, I would not be where I am today if it weren't for them." 
 />
 
+<!--
 <AboutCard 
 	title="Queer"
 	 description="I am a transsex woman who works in tech, very original I know. I am also <a href='https://en.wikipedia.org/wiki/Asexuality'>asexual</a> and <a href='https://lgbtqia.fandom.com/wiki/Biromantic'>biromantic</a>. Trans rights are human rights; Queer rights are human rights." 
 />
+-->
 
 <AboutCard 
 	title="Pokemon Lover"
