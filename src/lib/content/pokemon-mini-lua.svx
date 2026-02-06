@@ -1,0 +1,68 @@
+<script>
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import Giscus from '$lib/components/Giscus.svelte';
+    import BackToHome from '$lib/components/BackToHome.svelte';
+	let contentEl;
+</script>
+
+<BackToHome />
+
+<ArticleHeader 
+	title="Running Lua on a tiny handheld from 2001"
+	author="Charmunk"
+	authorAvatarPath="https://ca.slack-edge.com/T0266FRGM-U07UV4R2G4T-2fdbf62c3198-512"
+	date="2026-01-15"
+	description="The journey to get Nelua compiling on the Pokemon Mini"
+	readTime={true}
+	toc={true}
+	content={contentEl}
+/>
+
+<div bind:this={contentEl}>
+
+# The Goal
+
+The Pokemon Mini is a very cool console. It was basically a Mini Gameboy. Released in 2001, 3 inches by 2 inches, black and white screen, 4KB of ram, and a CPU designed for digital watches. 
+
+<img src="https://files.ivie.codes/files/view/90" height="200px">
+
+The [homebrew](https://en.wikipedia.org/wiki/Homebrew_(video_games)) community for the mini is surprisingly active for such a niche console. Several different emulators, a C SDK, and multiple assemblers/linkers.
+
+Even still, due to how underpowered the system is, the only options for programming it were to use the C SDK or Assembly.
+
+My goal was to get Lua code running on the console. Even with the low powered hardware, it shouldn't be that hard, right? [Nelua](https://nelua.io/) already provides a way to compile Lua to C, so I just needed to make it work with the C SDK.
+
+# The Process
+
+My first attempt was just a basic Nelua project with garbage collector disabled (zero chance the mini is powerful enough to run the garbage collector). I took the C code it compiled, created a basic cartridge header (an assembly file that tells the Pokemon Mini some info about your game and how it's formatted), and attempted to compile.
+
+Unsurprisingly, the compile failed, with loads of syntax errors. As it turns out, Nelua compiles to C99. The Pokemon Mini SDK expects C89. 
+
+I looked online for C99 to C89 converters, and I found [one](https://github.com/libav/c99-to-c89)! Running it on the generated C code and then compiling gave less syntax errors, but I still could not get it to fully compile.
+
+As a last resort attempt, I asked Claude to create a Powershell script converting the generated C99 to C89. I was not expecting it to work, and it didn't at first, but after a few cycles of copying in compiler output, it was able to produce a working script, and I got an output. 
+
+When I tried to actually run that code, I got an error that no cart was found. As it turns out, Pokemon Mini assembly does not start at the first byte. The first section of memory is reserved for several hardware registers. It also requires the word "NINTENDO" to be stored in a specific location in the rom. 
+
+Adjusting the output to put "NINTENDO" in the correct place and to leave the first section with the hardware registers unmodified, and it successfully ran!
+
+The final step was to make some helper functions. I wrote up Lua helper functions for using the [hardware registers](https://www.pokemon-mini.net/documentation/registers/) (set_pixel, get_pixel, etc). 
+
+# The Final Product
+
+ <video height="240" controls>
+  <source src="https://files.ivie.codes/files/view/91" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
+
+*Alt text: Video of a snake clone made using Nelua running through the PokeMini Emulator*
+
+The library functions fine on both an emulator and a physical device, and seems to be performing perfectly fine. I have no idea if people will actually use it to make games, but I definitely will.
+
+The library is open source and available [here](https://github.com/Charmunks/nelua-mini).
+
+***
+<Giscus name="pokemon-mini-lua" />
+
+
+</div>
