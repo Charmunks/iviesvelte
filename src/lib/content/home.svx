@@ -14,7 +14,6 @@ I am primarily a web developer, but I do dabble in games, hardware, and software
 
 I currently work as a software engineer on the clubs team at [Hack Club](https://hackclub.com) helping teenagers like me start coding clubs at their schools.
 
-The site you are currently viewing is the 6th iteration of my site. You can view the past ones [here](/page/personal-sites).
 <SocialIcon icon="github" link="https://github.com/charmunks" />
 <SocialIcon icon="hackclub" link="https://https://hackclub.enterprise.slack.com/team/U07UV4R2G4T" />
 <SocialIcon image="/linkedin.svg" link="https://www.linkedin.com/in/ivie-fonner/" />
@@ -41,9 +40,9 @@ The site you are currently viewing is the 6th iteration of my site. You can view
 	/>
 
 	<Project
-		name="seek.gay" 
-		link="https://seek.gay" 
-		description="Private and secure search engine."
+		name="Nelua Mini" 
+		link="https://github.com/Charmunks/nelua-mini" 
+		description="Nelua interpreter for Pokemon Mini."
 	/>
 </ProjectGrid>
 
@@ -74,17 +73,7 @@ The site you are currently viewing is the 6th iteration of my site. You can view
 	 description="I am a proud member of Hack Club. I also work there, helping bring the magic they brought me to more people. Hack Club completely changed my life in a major way, I would not be where I am today if it weren't for them." 
 />
 
-<!--
-<AboutCard 
-	title="Queer"
-	 description="I am a transsex woman who works in tech, very original I know. I am also <a href='https://en.wikipedia.org/wiki/Asexuality'>asexual</a> and <a href='https://lgbtqia.fandom.com/wiki/Biromantic'>biromantic</a>. Trans rights are human rights; Queer rights are human rights." 
-/>
--->
 
-<AboutCard 
-	title="Pokemon Lover"
-	 description="As you can probably tell, I like Pokemon. My favorite pokemon are Mew and Charmander. I've played every main-line Pokemon game except for Legends Z-A, and I have a decently large Pokemon Card collection." 
-/>
 
 <div style="margin-bottom: 100px;"></div>
 
