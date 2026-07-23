@@ -51,16 +51,17 @@ I currently work as a software engineer on the clubs team at [Hack Club](https:/
 <ProjectGrid>
 
 	<Project
+		name="Interning at Hack Club (2026)" 
+		link="/page/internship" 
+		description="My experience interning at Hack Club HQ in Vermont."
+	/>
+
+	<Project
 		name="Running Lua on a tiny handheld from 2001" 
 		link="/page/pokemon-mini-lua" 
 		description="The journey to get Nelua compiling on the Pokemon Mini"
 	/>
 
-	<Project
-		name="Pokemon Friends: Scam with cute characters" 
-		link="/page/pokemon-friends" 
-		description="Even Pokemon isn't free from cheap asset-flip games."
-	/>
 
 
 </ProjectGrid>

@@ -1,0 +1,183 @@
+<script>
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import Giscus from '$lib/components/Giscus.svelte';
+    import BackToHome from '$lib/components/BackToHome.svelte';
+	let contentEl;
+</script>
+
+<BackToHome />
+
+<ArticleHeader 
+	title="Interning at Hack Club (2026)"
+	author="Charmunk"
+	authorAvatarPath="https://ca.slack-edge.com/T0266FRGM-U07UV4R2G4T-2fdbf62c3198-512"
+	date="2026-01-04"
+	description="My experience interning at Hack Club HQ in Vermont"
+	readTime={true}
+	toc={false}
+	content={contentEl}
+/>
+
+<div bind:this={contentEl}>
+
+## Prologue 
+
+I was selected as one of two interns for the Club Department at Hack Club. I was told I would likely be invited by @jps (my manager) in February, and it was confirmed this would happen in March.
+
+After explaining everything to parents, booking travel, and a few more months of school, it was time for the internship. 
+
+Note: I'm not gonna mention every day in this blog post, just the ones where interesting things happened. This is partially to keep the post from being extremely long and partially because my memory is horrible.
+
+## Sunday, June 21st
+
+I packed my bags, and headed to the airport to catch my flight to Burlington Vermont, where I would be spending the next month.
+
+<img src="https://files.ivie.codes/files/view/205" height="300px"/>
+<img src="https://files.ivie.codes/files/view/203" height="300px"/>
+
+Around noon, I arrived in Burlington! I got lunch at a restaurant in the airport and then headed to Champlain College, which is where the interns would be living for the month.
+
+I was given the room key to my room and introduced to my roommate, [@foxmoss](https://foxmoss.com/). I spent some time in the room getting unpacked, and then went out to check out the intern lounge, only to realize I forgot my room key in my room.
+
+I was too embarrassed to call for someone to let me in and admit I lost my room key on the very first day of the internship, so instead I walked into downtown Burlington and did some exploring. I checked out a candy store and bought some ice cream, before returning to the dorms.
+
+By the time I was back my roommate had returned from their trip (I'm not actually sure where they went) and they let me back into my room.
+
+After that, all the interns who had arrived had an onboarding meeting. We discussed work expectations and what living would be like. We were also introduced ourselves and were introduced to some of the adults we would be working with over the next month.
+
+After the meeting, [@stelle](https://stelle.codes) finally arrived! She was the only intern I was friends with online before the internship started, so I was excited to meet her in person. 
+
+It was pretty late, so I went with her and one of her roommates ([@themenance](https://hackclub.enterprise.slack.com/team/U0AM2DYC3FB)) to grab dinner. We forgot that it was fathers day, and every restaurant we tried was either closed because of how late it was or closed for fathers day. Eventually we gave up and ordered uber eats.
+
+After the dinner adventure, I spent some time with stelle and my roommate and then headed to bed for the night.
+
+## Monday, June 22nd.
+
+I woke up at 6 am after a night of almost no sleep. I checked my phone, and it turns out I was not the only one. Almost all the interns were already awake. 
+
+Me and 3 of the other interns decided to go down to CVS before work to get some supplies and snacks. We also went down to the transit station right next to CVS to get our transit accounts marked as under 18 so we could get half off on transit.
+
+After that, we headed to HQ! After a quick tour of the new office, I found a nice place to sit and started working. Today was a relatively uneventful day, just including it because it was the first day in the office.
+
+<img src="https://files.ivie.codes/files/view/197" height="200px"/>
+<img src="https://files.ivie.codes/files/view/196" height="200px"/>
+
+## Tuesday, June 23rd.
+
+Pretty uneventful day in the office, but after work we had presentation night! We basically had everyone make presentations and then randomized who gave each presentation, so you would have to present something someone else made.
+
+<img src="https://files.ivie.codes/files/view/184" height="300px"/>
+<img src="https://files.ivie.codes/files/view/185" height="300px"/>
+
+## Sunday, June 28th
+
+The first weekend of the internship! There was a trip planned to a waterfall for the interns, but I do not like swimming, so I stayed back at the dorms with a few of the other interns. I went to a pride parade in Burlington with a couple of the other interns who weren't going on the trip, and then hung out in the dorms with them til everyone got back.
+
+
+<img src="https://files.ivie.codes/files/view/181" height="200"/>
+<img src="https://files.ivie.codes/files/view/179" height="200"/>
+
+After everyone got back in the evening, we stayed up late playing games and doing karaoke in the intern lounge.
+
+## Monday, June 29th
+
+Evan Streams, the community manager at Hack Club, took all the interns out to lunch with the founder of [Seventh Generation](https://www.seventhgeneration.com/), a local Vermont business built around sustainable and eco-friendly products. We had an interesting discussion with him about his business and the environment.
+
+## Thursday, July 2nd
+
+Watched Hamilton with two of the other interns! ([@kat](https://kat.wang/) and stelle)
+
+## Friday, July 3rd
+
+We had the day off from work! I spent some time with [@1mon](https://github.com/2Mon) and stelle for most of the day, and then went out to dinner with them. We met up with [@bunnyguy](https://snipchu.neocities.org) after dinner and got ice cream.
+
+After ice cream, we went to HQ to watch the fireworks from the roof of HQ! Burlington is weird and actually does fireworks on the 3rd instead of the 4th. The fireworks are fired off from boats on the oceanfront, and HQ has a great view. 
+
+<img src="https://files.ivie.codes/files/view/176" height="200"/>
+<img src="https://files.ivie.codes/files/view/174" height="200"/>
+<img src="https://files.ivie.codes/files/view/172" height="200"/>
+<img src="https://files.ivie.codes/files/view/168" height="200"/>
+<img src="https://files.ivie.codes/files/view/165" height="200"/>
+<img src="https://files.ivie.codes/files/view/207" height="200"/>
+
+## Wed, July 8th
+
+Went to the beach with the interns! There was an ice skating rink next to the beach, so we ice skated for a bit, and then watched the sunset on the beach.
+
+<img src="https://files.ivie.codes/files/view/158" height="300"/>
+<img src="https://files.ivie.codes/files/view/156" height="300"/>
+
+## Thursday, July 9th
+
+Went to a Pokemon tournament (Pitch Black pre-release) with [@jenin](https://jenin.codes/)! I ended up going 3 wins and 0 losses and got 8 packs as prizing!
+
+## Sunday, July 12th
+
+The interns went on a trip to Boston! We woke up at 3 in the morning to get on a shitty greyhound bus and arrived in Boston around 7 am. 
+
+We visited the Boston aquarium and the F1 arcade.
+
+<img src="https://files.ivie.codes/files/view/147" height="200"/>
+<img src="https://files.ivie.codes/files/view/142" height="200"/>
+<img src="https://files.ivie.codes/files/view/138" height="200"/>
+<img src="https://files.ivie.codes/files/view/137" height="200"/>
+<img src="https://files.ivie.codes/files/view/134" height="200"/>
+
+We grabbed lunch at shake shack, but the lack of sleep and the morning of walking everywhere caught up to me and I felt completely exhausted. We checked out the Boston Public library, but after that I was extremely tired and could not walk any further. I found a cafe/bookstore in Boston and rested there with one of the other interns for a bit until it was time to head back to Vermont (another 3 hour greyhound trip, yay)
+
+## Friday, July 17th
+
+The last full day of the internship. Every intern I talked to today had shed tears over the internship being over, which is a testament to how amazing of an experience it was.
+
+Rebeka took all the interns and any other employee who was interested out to a local ice cream store to get ice cream and celebrate the final day.
+
+We took the intern group photo, finished up any remaining work, and that was it. The internship was officially over. We had one more night in the dorms before we would all fly home. 
+
+<img src="https://files.ivie.codes/files/view/208" height="325"/>
+
+## Saturday, July 18th
+
+Woke up early in the morning to clean my room and pack, because I procrastinated. We got kicked out of the dorms at 10 am, so we brought all of our stuff to HQ to hang out for a bit until it was time for everyone's flight.
+
+One of my friend's flight left at 1, so I went with them and 1 other friend (@jenin and @stelle) to the airport around noon.
+
+After jenin left, me and stelle waited in the airport for 5 hours for our flights. I'm not ashamed to say I was crying for a large amount of that time.
+
+Time ticked down, and eventually it was time for my flight. The internship was over.
+
+
+## Stuck in Vermont
+
+Surprise! You aren't going home actually. Turns out there was a major storm in Burlington, and all the outbound flights in the evening got cancelled.
+
+Oh also - all the flights til tuesday are already full! Have fun!
+
+After some panicking and talking with the folks at Hack Club, it was arranged for me and stelle to stay in an apartment that Hack Club rents out year around for their remote staff to visit in person for short periods for the next few days.
+
+We mostly just stayed in our room lamenting the end of the internship and enjoying the last few days we had together, but we did check out an arcade in Burlington we had been meaning to check out during the internship but never got the chance to.
+
+<img src="https://files.ivie.codes/files/view/119" height="300"/>
+<img src="https://files.ivie.codes/files/view/117" height="300"/>
+
+A few days later, it was actually time to leave. I made it to the airport, and this time my flight made it to DC. The end of one of the best months of my life. 
+
+## What did I actually work on?
+
+I mostly left work related stuff out of the blog, as I feel like the average reader isn't interested in what I did at work each day. 
+
+There will definitely be some people reading this blog hoping to intern themselves, so I want to include a bit about what I actually did each day.
+
+I was hired to manage and improve infrastructure used by individual Hack Clubs. I worked on the [Club Leaders Portal](https://leaders.hackclub.com/), as well as creating a new program dedicated to providing funding to new Hack Clubs.
+
+## Conclusion
+
+Interning at Hack Club was truly one of the best experiences of my life. Being away from parents and completely free for a month, while surrounded by friends and like-minded people 24/7 is a very unique experience as a teenager. 
+
+This blog post is dedicated to [@stelle](https://stelle.codes), [@kat](https://kat.wang/), [@jenin](https://jenin.codes), [@1mon](https://github.com/2Mon), [@dld](https://dld.onl/hc), [@jolly](https://github.com/jollyroger182), [@jeremy](https://jeremywoolley.com/), and all the people at HQ who made this experience amazing.
+
+
+***
+<Giscus name="internship" />
+
+
+</div>
