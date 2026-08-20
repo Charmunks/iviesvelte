@@ -81,12 +81,9 @@ I currently work as a software engineer on the clubs team at [Hack Club](https:/
 <Button88x31 link="https://3kh0.net/" image="/buttons/3kh0.webp" alt="3kh0" />
 <Button88x31 link="https://saahild.com/" image="https://raw.githubusercontent.com/NeonGamerBot-QK/NeonGamerBot-QK/refs/heads/main/webring.gif" alt="Neon" />
 <Button88x31 link="https://lynn.pt/" image="/buttons/lynn.webp" alt="Lynn" />
-<Button88x31 link="https://yip.cat/" image="https://yip.cat/88x31" alt="Taggie" />
 <Button88x31 link="https://hackclub.com/" image="/buttons/hackclub.png" alt="Hack Club" />
 <Button88x31 link="https://svelte.dev" image="/buttons/svelte.gif" alt="Svelte" />
-<Button88x31 link="https://www.thetrevorproject.org/" image="/buttons/transrights.gif" alt="Trans rights" />
 <Button88x31 link="https://www.firefox.com/en-US/" image="/buttons/firefox.gif" alt="Anything but chrome" />
-<Button88x31 link="#" image="/buttons/queer.png" alt="Queer coded" />
 <Button88x31 link="https://ublockorigin.com/" image="/buttons/ublock.png" alt="Ublock Origin" />
 <Button88x31 link="#" image="/buttons/itoddler.gif" alt="Anti-Apple" />
 <Button88x31 link="https://keepthefuturehuman.ai/" image="/buttons/ai.gif" alt="Don't feed the AI" />
