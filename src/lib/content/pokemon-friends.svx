@@ -20,9 +20,6 @@
 
 <div bind:this={contentEl}>
 
-
-*Note: This article was inspired by an amazing [video documentary](https://www.youtube.com/watch?v=M9o2r5nlNi8&t=1691s) on the same topic by [CandyEvie](https://www.youtube.com/@CandyEvie). If you are looking for a more detailed explanation, I highly recommend checking it out.*
-
 # The Gameplay
 
 Pokemon Friends is a spin-off game released for mobile and Nintendo Switch, priced for free on mobile and for $10 on Switch. Play simple puzzles, get rewarded with colorful yarn. Use that yarn to craft custom Pokemon plushies, and sell them to your town members. 
